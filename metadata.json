@@ -1,0 +1,7 @@
+{
+  "name": "LORDx Hologram",
+  "description": "A minimalist, high-end holographic AR interface controlled by hand gestures.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
