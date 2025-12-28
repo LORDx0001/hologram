@@ -31,8 +31,8 @@ const App: React.FC = () => {
         if (current) {
           if (current.isFist && !prevHand.isFist) {
             fistCount.current += 1;
-            // The HologramScene will have 25+ shapes in order of complexity
-            current.shapeIndex = (fistCount.current - 1) % 25;
+            // Now 65 unique shapes available
+            current.shapeIndex = (fistCount.current - 1) % 65;
           } else {
             current.shapeIndex = prevHand.shapeIndex;
           }
@@ -72,7 +72,7 @@ const App: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <Canvas
           camera={{ position: [0, 0, 5], fov: 36 }}
-          dpr={[1, 2.5]} // High DPI for 8K-like quality
+          dpr={[1, 2.5]}
           gl={{ 
             antialias: true, 
             alpha: false, 
